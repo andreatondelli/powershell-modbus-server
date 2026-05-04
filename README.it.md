@@ -5,8 +5,6 @@
 Server Modbus TCP minimale per testare client e librerie in modo controllato.
 Un client alla volta, bloccante. Non richiede dipendenze esterne.
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/andreatondelli)
-
 ---
 
 ## Avvio rapido
