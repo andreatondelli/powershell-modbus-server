@@ -56,6 +56,11 @@ Il server mantiene in memoria quattro banchi indipendenti, tutti di dimensione 6
 I banchi Input Registers e Discrete Inputs sono in sola lettura via protocollo Modbus;
 puoi scriverli solo tramite le funzioni PowerShell (utile per simulare sensori).
 
+Tutti gli indirizzi da 0 a 65535 sono accettati senza validazione: il server non risponde mai
+con "Illegal Data Address" a meno che non venga iniettato esplicitamente quell'errore tramite
+`Set-ModbusError`. I valori scritti da un client vengono salvati in RAM e restituiti dalle
+letture successive — il server è stateful per tutta la durata del processo.
+
 ---
 
 ## API PowerShell

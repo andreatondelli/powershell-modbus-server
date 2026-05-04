@@ -56,6 +56,11 @@ The server maintains four independent banks in memory, each of size 65536:
 Input Registers and Discrete Inputs are read-only via the Modbus protocol;
 you can write them only through the PowerShell API (useful for simulating sensors).
 
+All addresses from 0 to 65535 are accepted without validation: the server never replies with
+"Illegal Data Address" unless you explicitly inject that error via `Set-ModbusError`.
+Values written by a client are stored in RAM and returned by subsequent reads — the server
+is stateful for the entire duration of the process.
+
 ---
 
 ## PowerShell API
