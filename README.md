@@ -5,6 +5,8 @@
 Minimal Modbus TCP server for testing clients and libraries in a controlled environment.
 Single client, blocking. No external dependencies required.
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/andreatondelli)
+
 ---
 
 ## Quick start
