@@ -1,6 +1,6 @@
 # PsModbusTcpServer — Server Modbus TCP in PowerShell
 
-> 🇬🇧 [Read in English](../README.md)
+> 🇬🇧 [Read in English](README.md)
 
 Server Modbus TCP minimale per testare client e librerie in modo controllato.
 Un client alla volta, bloccante. Non richiede dipendenze esterne.
